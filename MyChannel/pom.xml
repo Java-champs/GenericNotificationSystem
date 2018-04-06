@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.skc.notification</groupId>
+		<artifactId>GenericNotificationSystem</artifactId>
+		<version>0.1-RC</version>
+	</parent>
+	<artifactId>MyChannel</artifactId>
+	<name>Application for My Channel</name>
+	<description>Application for My Channel</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>GenericSlackAdaptor</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<finalName>${project.artifactId}-${project.version}</finalName>
+	</build>
+</project>
